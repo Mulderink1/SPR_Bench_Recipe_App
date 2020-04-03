@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: purple;
+}
+
+.dashboard-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
+.dashboard-cards > div {
+  text-align: center;
+  margin: 5rem;
+  height: 16rem;
+  width: 22rem;
+}

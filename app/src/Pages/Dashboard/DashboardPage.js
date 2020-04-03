@@ -1,4 +1,7 @@
 import React from 'react';
+
+import './Dashboard.css';
+
 import { Link } from 'react-router-dom';
 import DashboardCardComponent from './Components/DashboardCardComponent';
 
@@ -32,24 +35,18 @@ export default function DashboardPage() {
           <li>
             <Link to="/">Login Page</Link>
           </li>
-        </ul>
-        <ul>
           <li>
             <Link to="/recipe">Recipe Page</Link>
           </li>
-        </ul>
-        <ul>
           <li>
             <Link to="/recipe/create">Create Recipe</Link>
           </li>
-        </ul>
-        <ul>
           <li>
             <Link to="/mikey-tic-tac-toe">Mikey's Tic Tac Toe</Link>
           </li>
         </ul>
       </nav>
-      <div>
+      <div className="dashboard-cards">
         {cardPropsArray.map(mapElement => <DashboardCardComponent element={mapElement} />)}
       </div>
     </div>
